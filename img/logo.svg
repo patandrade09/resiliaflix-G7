@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 284px;
+        font-family: Spartan;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        fill: #8a20ec;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="resiliaflix" class="cls-1" transform="translate(97.84 72.441) scale(0.2 0.2)">resilia<tspan class="cls-2">flix</tspan></text>
+  <path id="Retângulo_Arredondado_1" data-name="Retângulo Arredondado 1" class="cls-3" d="M44.363,20.628H62.342a20,20,0,0,1,20,20V59.372a20,20,0,0,1-20,20H44.363a20,20,0,0,1-20-20V40.628A20,20,0,0,1,44.363,20.628Z"/>
+  <path id="Retângulo_1" data-name="Retângulo 1" class="cls-4" d="M48.409,32.457H70.853V55.313h0L48.409,32.457h0Z"/>
+  <path id="Retângulo_1_copiar" data-name="Retângulo 1 copiar" class="cls-4" d="M34.516,45.489H56.959V68.345h0L34.516,45.489h0Z"/>
+</svg>
