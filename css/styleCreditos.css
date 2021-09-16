@@ -1,0 +1,97 @@
+* {
+    /* Vamos fazer um reset do padding e margin. */
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background: #000;
+    color: #f2cb06;
+    font-family: 'Helvetica-neue', 'Helvetica', sans-serif;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .shadow {
+    height: 100px;
+    background-color: #000;
+    box-shadow: 0px 10px 20px #000;
+    position: relative;
+    z-index: 100;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0) translate(-50%, -50%);
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: scale(0) translate(-50%, -50%);
+    -moz-transform: scale(0) translate(-50%, -50%);
+    transform: scale(0) translate(-50%, -50%);
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+  }
+  @keyframes logo {
+    from {
+      transform: translate(-50%, -50%) scale(2);
+      /* Precisamos repetir o translate, pois o keyframe sobescreve os valores da propriedade */
+    }
+    to {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+  .texto {
+    text-align: center;
+  }
+  .texto p {
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000;
+    margin-top: 70px;
+    line-height: 1.4;
+  }
+  .titulo {
+    font-size: 85px;
+  }
+  .subtitulo {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .texto {
+    text-align: center;
+    transform: perspective(800px) rotateX(25deg);
+  }
+  .texto {
+    text-align: center;
+    transform: perspective(800px) rotateX(25deg) translateY(40%);
+  }
+  .texto {
+    text-align: center;
+    transform: perspective(800px) rotateX(25deg) translateY(40%);
+    animation-name: subir;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+  }
+  @keyframes subir {
+  15% {
+    transform: perspective(800px) rotateX(25deg) translateY(40%);
+    /* Precisamos repertir a perspective e o rotate para manter a perspectiva e rotação. */
+  }
+  100% {
+    transform: perspective(800px) rotateX(25deg) translateY(-220%);
+    /* O translate -220% serve para deslocar o texto para cima! dando a sensação de que o texto está subindo. */
+  }
+}
