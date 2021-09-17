@@ -11,6 +11,7 @@
     <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/js-paginas-busca/busca-filme.js" defer></script>
     <!-- colocar script das páginas dos filmes  -->
 </head>
 <header>
@@ -23,18 +24,18 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Search</a>
+                        <a class="nav-link" href="./busca-filme.html">Search</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="./creditos.html">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busca-filme" href="./busca-filme.html">
+                    <button class="btn btn-outline-success" type="submit" id="pesquisar-filme"><i class="fas fa-search"></i></button>
                 </form>
                 <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
                 <button type="button" class="btn btn-secondary"><a href='#'>Sign Up</a></button>
@@ -50,7 +51,7 @@
                 <h2 id="titulo-filme">Filme</h2>
             </div>
             <div class="col rating">
-                <strong>Rating:</strong> 5 |
+                <strong>Rating:</strong> 5
                 <strong>Classificação</strong> 12 anos
             </div>
         </div>
