@@ -38,9 +38,9 @@ footer {
     margin: 0 auto;
 }
 
-.container1, .container2 {
-    width:50%;
-    
+.container1,
+.container2 {
+    width: 50%;
 }
 
 .copyright {
@@ -56,10 +56,9 @@ footer {
 }
 
 .btn-outline-success {
-    border:none;
+    border: none;
     color: white;
 }
-
 
 .btn-outline-success {
     border: 1px solid #8a20ec;
@@ -80,7 +79,8 @@ footer {
     margin-right: 1em;
 }
 
-.btn-check:focus+.btn-primary, .btn-primary:focus {
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
     color: #fff;
     background-color: #f6b087;
     border-color: #f6b087;
@@ -89,10 +89,9 @@ footer {
 
 .bg-dark {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity))!important;
     height: 80px;
 }
-
 
 .form-control {
     display: block;
@@ -109,7 +108,7 @@ footer {
     -moz-appearance: none;
     appearance: none;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .form-control:focus {
@@ -120,9 +119,8 @@ footer {
     box-shadow: 0 0 0 0.25rem rgb(34 34 34);
 }
 
-
-
-.btn-primary a, .btn-secondary a  {
+.btn-primary a,
+.btn-secondary a {
     color: #fff;
     text-decoration: none;
     background-color: none;
@@ -147,13 +145,12 @@ footer {
     border-color: #2ac5f4;
 }
 
-
 .btn-secondary a {
     color: #1f565d;
 }
 
-
-.btn-check:focus+.btn-outline-success, .btn-outline-success:focus {
+.btn-check:focus+.btn-outline-success,
+.btn-outline-success:focus {
     box-shadow: none;
 }
 
@@ -176,7 +173,8 @@ h2 {
     margin-bottom: 0.75em;
 }
 
-.h5, h5 {
+.h5,
+h5 {
     font-size: 3rem;
     font-weight: 800;
     text-shadow: 0px 0px 20px #868eff, 0px 0px 20px #868eff, 0px 0px 20px #868eff;
@@ -193,8 +191,8 @@ h2 {
 }
 
 .navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.55);
-    border-color: rgba(255,255,255,.1);
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .1);
     margin: 0 1em 0 0;
 }
 
@@ -213,7 +211,8 @@ h2 {
     width: 60%;
 }
 
-.menu, .creditos {
+.menu,
+.creditos {
     width: 20%;
 }
 
@@ -221,6 +220,7 @@ h2 {
     margin: 1.5rem;
 }
 
-.menu h2, .creditos h2 {
+.menu h2,
+.creditos h2 {
     margin-left: 1em;
 }
