@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
+        integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+
+                    </form>
+                    <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
+                    <button type="button" class="btn btn-secondary"><a href='#'>Sign Up</a></button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <h1>Cadastro</h1>
+    
+    <div class="container">
+
+        <form>
+            <!-- Dados Pessoais-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <label class="form-label" for="nome">Nome: </label>
+                    <input class="form-control" placeholder="Nome" type="text" name="email">
+                </div>
+
+                <div class="col">
+                    <label class="form-label" for="sobrenome">Sobrenome: </label>
+                    <input class="form-control" placeholder="Sobrenome" type="text" name="sobrenome">
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <label class="form-label" for="rg">RG:</label>
+                    <input class="form-control" placeholder="RG" type="text" name="rg">
+                </div>
+                <div class="col">
+                    <label class="form-label" for="cpf">CPF:</label>
+                    <input class="form-control" placeholder="CPF" type="text" name="cpf">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <!--Endereço-->
+            <!--Rua-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-7">
+                    <label class="form-label" for="rua">Rua:</label>
+                    <input class="form-control" placeholder="Rua" type="text" name="rua">
+                </div>
+                <div class="col-1">
+                    <!--Numero-->
+                    <label class="form-label" for="numero">Numero:</label>
+                    <input class="form-control" placeholder="Numero" type="text" name="numero">
+                </div>
+                <div class="col-2">
+                    <!--Complemento-->
+                    <label class="form-label" for="complemento">Complemento:</label>
+                    <input id="complemento" type="text" class="form-control" placeholder="Complemento"
+                        name="complemento">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <!--CEP-->
+                    <label class="form-label" for="cep">CEP:</label>
+                    <input id="cep" class="form-control" placeholder="CEP" type="text" name="cep">
+                </div>
+                <div class="col">
+                    <!--Bairro-->
+                    <label class="form-label" for="bairro">Bairro: </label>
+                    <input class="form-control" placeholder="Bairro" type="text" name="bairro">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <!--Estado-->
+                    <label class="form-label" for="estado">Estado:</label>
+                    <!--Seleção-->
+                    <select class="form-select" name="estado">
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="se">Sergipe</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <!--Cidade-->
+                    <label class="form-label" for="cidade">Cidade: </label>
+                    <input class="form-control" placeholder="Cidade" type="text" name="cidade">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+
+                    <!-- Login-->
+                    <!--E-mail-->
+                    <label class="form-label" for="email">E-mail: </label>
+                    <input class="form-control" placeholder="E-mail" type="text" name="email">
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col">
+                    <!--Senha-->
+                    <label class="form-label" for="pwd">Senha: </label>
+                    <input class="form-control" placeholder="Senha" type="password" name="pwd">
+                </div>
+
+                <div class="col">
+                    <!--confirmação-->
+                    <label class="form-label" for="pwdConfir">Confirme a senha: </label>
+                    <input class="form-control" placeholder="Senha" type="password" name="pwdConfir">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-1">
+                    <!-- Botão enviar e limpar-->
+                    <button class=" btn-secondary" type="submit" name="enviar" value="foo">Enviar</button>
+                </div>
+                <div class="col-1">
+                    <button class=" btn-secondary" type="reset" name="limpar" value="foo">Limpar</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <footer>
+        <div class='container-footer'>
+            <div class='copyright'>
+                Copyright 2021 - ResiliaFlix
+            </div>
+    </footer>
+
+</body>
+
+</html>
