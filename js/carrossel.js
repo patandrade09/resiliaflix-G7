@@ -4,11 +4,11 @@ owl.owlCarousel({
     loop:true,
     margin:2,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:5000,
     autoplayHoverPause:true
 });
 $('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
+    owl.trigger('play.owl.autoplay',[5000])
 })
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')

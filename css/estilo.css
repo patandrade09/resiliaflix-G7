@@ -2,7 +2,7 @@ body {
     text-decoration: none;
     background: black;
     color: #b1b1b1;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -168,16 +168,19 @@ footer {
 
 h2 {
     font-weight: bolder;
-    text-shadow: 1px 2px 14px #e0fff7, 0px -2px 20px #8f8f8f;
     font-size: 1.5em;
     margin-bottom: 0.75em;
 }
 
-.h5,
-h5 {
+.h5, h5 {
     font-size: 3rem;
     font-weight: 800;
     text-shadow: 0px 0px 20px #868eff, 0px 0px 20px #868eff, 0px 0px 20px #868eff;
+}
+
+.menu h2,
+.creditos h2 {
+    margin-left: 1em;
 }
 
 .navbar-brand {
@@ -211,16 +214,17 @@ h5 {
     width: 60%;
 }
 
-.menu,
-.creditos {
-    width: 20%;
-}
 
 .logo-1 p {
     margin: 1.5rem;
 }
 
-.menu h2,
-.creditos h2 {
-    margin-left: 1em;
+.modal-backdrop.show {
+    opacity: .5;
+    display: none;
+}
+
+.menu,
+.creditos {
+    width: 20%;
 }
