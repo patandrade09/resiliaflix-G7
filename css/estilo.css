@@ -154,3 +154,29 @@ h2 {
     overflow-y: auto;
     margin: 0 2em;
 }
+
+/*pagina do cadastro*/
+h1 {
+    text-align: center;
+
+}
+
+button[type=submit],
+[type=reset] {
+
+    padding: 10px;
+    color: #fff;
+    background-color: #8a20ec;
+    border-color: #8a20ec;
+    border-radius: 8px;
+}
+
+button[type=submit]:hover,
+[type=reset]:hover {
+    background-color: rgb(167, 158, 158);
+
+}
+
+form button.btn-secondary {
+    margin-top: 1.5em;
+}
