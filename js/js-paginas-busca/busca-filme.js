@@ -6,7 +6,7 @@ pesquisar.addEventListener('click', function filme(evento) {
     evento.preventDefault();
 
     $.ajax({
-        url: `http://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${movie.value}`,
+        url: `https://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${movie.value}`,
         success: function(req) {
             console.log(req)
             if (req.Error) {
