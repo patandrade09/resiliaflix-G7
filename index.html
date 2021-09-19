@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-  <script src='js/search.js' defer></script>
+  
 </head>
 
 <body>
@@ -45,7 +45,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/busca-filme.html">Search</a>
+              <a class="nav-link" href="busca-filme.html">Search</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="creditos.html">Contact</a>
@@ -53,11 +53,9 @@
           </ul>
 
           <form class="d-flex">
-            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..."
-              aria-label="Search">
+            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..." aria-label="Search" required>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              type="submit" id="botao-busca-rapida">
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
               <i class="fas fa-search"></i>
             </button>
 
@@ -67,48 +65,13 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
+                    <h2 id='titulo'></h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    <div id="container">
-                      <h4 class="search-a-movie">Search for a movie</h4>
-                      <div class="col erro">
-                        <div id="erro-filme"></div>
-                      </div>
-
-                      <div class="container container-personal" id="container-filme">
-                        <div class="row">
-                          <div class="col titulo">
-                            <h2 id="titulo-filme"></h2>
-                          </div>
-                          <div class="col rating">
-                            <div id="rating-filme"></div>
-                            <div id="classificacao-filme"></div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-4">
-                            <div id="imagem-filme">
-                            </div>
-                          </div>
-                          <div class="col-8 detalhes">
-                            <div id="duracao-filme"></div>
-                            <div id="ano-lancamento"></div>
-                            <div id="genero-filme"></div>
-                            <div id="diretores"></div>
-                            <div id="elenco"></div>
-                          </div>
-                        </div>
-
-                        <div class="row texto">
-                          <div class="col">
-                            <div id="textos-filme">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div id='error-busca'>Filme não encontrado</div>
+  <div class="modal-body" id='modal-filme'>
+    <div id='elenco'></div>
+    <div id='poster'></div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -149,7 +112,7 @@
         <div class="carousel-item">
           <img src="img/carr-2.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>"Some thing are stronger than blood."</h5>
+            <h5>"Some things are stronger than blood."</h5>
             <p>Luke Skywalker</p>
           </div>
         </div>
@@ -259,8 +222,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/carrossel.js"></script>
-
+<script src='./js/principal.js'></script>
 </html>

@@ -168,9 +168,11 @@ footer {
 
 h2 {
     font-weight: bolder;
-    font-size: 1.5em;
-    margin-bottom: 0.75em;
+    font-size: 2em;
+    margin-bottom: 0;
+    color: #727272;
 }
+
 
 .h5, h5 {
     font-size: 3rem;
@@ -182,6 +184,7 @@ h2 {
 .creditos h2 {
     margin-left: 1em;
 }
+
 
 .navbar-brand {
     padding-top: .3125rem;
@@ -228,3 +231,9 @@ h2 {
 .creditos {
     width: 20%;
 }
+
+.menu h2, .creditos h2 {
+    margin: 0.5em 1em;
+    font-size: 1.5em;
+}
+
