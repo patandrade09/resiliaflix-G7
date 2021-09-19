@@ -13,7 +13,7 @@ pesquisar.addEventListener('click', function filme(evento) {
                 $('#erro-filme').html(`${req.Error}`)
                 $('#container-filme').css('display', `none`)
             } else if (movie.value == '') {
-                $('#invalido-filme').html(`Insira um filme válido.`);
+                $('#invalido-filme').html(`Insert a valid movie`);
                 $('#container-filme').css('display', `none`)
             } else {
                 $('#erro-filme').css('display', `none`)
