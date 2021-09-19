@@ -10,7 +10,7 @@ pesquisar.addEventListener('click', function filme(evento) {
         success: function(req) {
             console.log(req)
             if (req.Error) {
-                $('#erro-filme').html(`${req.Error}`)
+                $('#erro-filme').html(`| ${req.Error}   ||`)
                 $('#container-filme').css('display', `none`)
             } else if (movie.value == '') {
                 $('#invalido-filme').html(`| Insert a valid movie`);
