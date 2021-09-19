@@ -39,6 +39,7 @@
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
@@ -54,28 +55,42 @@
 
           <form class="d-flex">
             <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..." aria-label="Search" required>
+            
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
               <i class="fas fa-search"></i>
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h2 id='titulo'></h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div id='error-busca'>Filme não encontrado</div>
-  <div class="modal-body" id='modal-filme'>
-    <div id='elenco'></div>
+                
+                  
+                  
+  <div class="modal-body" id='modal-filme'></div>
+  <div class='layout'>
     <div id='poster'></div>
+  
+  
+  <div class='description'>
+    <div id='cast'></div>
+    <div id='duracao-filme'></div>
+    <div id='ano-lancamento'></div>
+    <div id='geracao-filme'></div>
+    <div id='rating-filme'></div>
+    <div id='textos-filme'></div>
+
+  </div>
+  <div id='texto-filme'></div>
+  <div id='error-busca'>Filme não encontrado</div>
+</div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -206,11 +221,11 @@
         <div class="creditos">
           <h2>Team</h2>
           <ul class='menu-footer'>
-            <li><a href='/index.html'>Eloise</a></li>
-            <li><a href='/index.html'>Gabriela</a></li>
-            <li><a href='/creditos.html'>Jean</a></li>
-            <li><a href='/cadastro.html'>Patrícia</a></li>
-            <li><a href='/login.html'>Paulo</a></li>
+            <li><a href='https://github.com/eloisecoffee'>Eloise</a></li>
+            <li><a href='https://github.com/gabrielaalvescosta'>Gabriela</a></li>
+            <li><a href='https://github.com/jeanetchichury/'>Jean</a></li>
+            <li><a href='https://github.com/patandrade09'>Patrícia</a></li>
+            <li><a href='https://github.com/paulocarrilho'>Paulo</a></li>
 
           </ul>
         </div>
@@ -224,5 +239,5 @@
   crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/carrossel.js"></script>
-<script src='./js/principal.js'></script>
+<script src='./js/pesquisar.js'></script>
 </html>

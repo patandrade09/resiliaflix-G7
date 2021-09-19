@@ -237,3 +237,60 @@ h2 {
     font-size: 1.5em;
 }
 
+#error-busca {
+    text-align: center;
+}
+
+.botao-modal {
+    color: #ffffff;
+    background-color: #252525;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+#poster img {
+    width: 150px;
+    margin: 0em 2em 0 0;
+}
+
+.layout {
+    display: flex;
+}
+
+.layout {
+    margin: 2em;
+    display: flex;
+}
+
+
+
+#error-busca {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 1px 2px 20px 0px #3e3e3e;
+    pointer-events: auto;
+    background-color: #3b3b3b;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-header {
+    border-bottom: 1px solid #575757;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0;
+}

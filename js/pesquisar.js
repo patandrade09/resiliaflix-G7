@@ -3,18 +3,19 @@ const buscar = document.getElementById('botao-busca-rapida');
 
 function mostraModal(req) {
     $('#titulo').html(req.Title)
-    $('#duracao-filme').html(`<strong>Duração:</strong> ${req.Runtime}`)
-    $('#ano-lancamento').html(`Lançamento: ${req.Released}`)
-    $('#genero-filme').html(`Gênero: ${req.Genre}`)
-    $('#diretores').html(`Direção: ${req.Director}`)
-    $('#elenco').html(`Elenco: ${req.Actors}`)
-    $('#rating-filme').html(`Ratings: ${req.Ratings[0].Value}`)
-    $('#classificacao-filme').html(` | ${req.imdbVotes}`)
-    $('#textos-filme').html(`Sinopse ${req.Plot}`)
-    $('#poster').html(`<img src="${req.Poster}"/>`)
+    $('#duracao-filme').html(`<strong>Duração:</strong> ${req.Runtime}`);
+    $('#ano-lancamento').html(`<strong>Lançamento:</strong> ${req.Released}`);
+    $('#genero-filme').html(`<strong>Gênero</strong> ${req.Genre}`);
+    $('#diretores').html(`<strong>Direção:</strong> ${req.Director}`);
+    $('#cast').html(`<strong>Elenco:</strong> ${req.Actors}`);
+    $('#rating-filme').html(`<strong>Rating:</strong> ${req.Ratings[0].Value}`);
+    $('#classificacao-filme').html(` | ${req.imdbVotes}`);
+    $('#textos-filme').html(`<strong>Sinopse:</strong> ${req.Plot}`);
+    $('#poster').html(`<img src="${req.Poster}"/>`);
     $('#error-busca').css('display', `none`);
     $('#modal-filme').css('display', `block`);
 }
+
 
 function removeModal() {
     $('#titulo').html('')
@@ -22,7 +23,7 @@ function removeModal() {
     $('#ano-lancamento').html('')
     $('#genero-filme').html('')
     $('#diretores').html('')
-    $('#elenco').html('')
+    $('#cast').html('')
     $('#rating-filme').html('')
     $('#classificacao-filme').html('')
     $('#textos-filme').html('')
