@@ -20,14 +20,6 @@
     font-size: 50px;
 }
 
-footer {
-    width: 100%;
-    height: auto;
-    background-color: black;
-    color: white;
-    padding: 0.8em 0;
-}
-
 .logo {
     width: 40%;
     height: auto;
@@ -36,10 +28,6 @@ footer {
 
 .logo h1 {
     font-size: 2em;
-}
-
-.copyright {
-    text-align: center;
 }
 
 .campo-pesquisa {
