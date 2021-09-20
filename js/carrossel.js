@@ -1,15 +1,51 @@
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:6,
-    loop:true,
-    margin:2,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[5000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
+function pegaPoster(movie) {
+    for (let i = 0; i < movie.length; i++) {
+        $.ajax({
+            url: `http://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${movie[i]}`,
+            success: function (req) {
+                $(`#${i + 1}`).append(
+                    `<img src="${req.Poster}" alt="move"><h6>${req.Title}`
+                )
+                if (i + 1 == 12){
+                    criaCarrossel()
+                }
+            },
+        });
+    }
+}
+
+const nomeFilmes = [
+    "Phantom Menace",
+    "of the clones",
+    "Revenge of the Sith",
+    "star wars",
+    "The Empire Strikes Back",
+    "Return of the Jedi",
+    "The Force Awakens",
+    "rogue one",
+    "The Last Jedi",
+    "A Star Wars Story",
+    "clone wars",
+    "mandalorian",
+];
+
+pegaPoster(nomeFilmes);
+
+function criaCarrossel() {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+}
