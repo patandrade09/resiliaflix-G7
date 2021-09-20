@@ -41,10 +41,7 @@ footer {
 .container1,
 .container2 {
     width: 50%;
-<<<<<<< HEAD
 
-=======
->>>>>>> dbbef1075c42ae4eb0a3a1a412d28465b26d6dac
 }
 
 .copyright {
@@ -177,13 +174,8 @@ h2 {
     color: #727272;
 }
 
-<<<<<<< HEAD
-.h5,
-h5 {
-=======
 
 .h5, h5 {
->>>>>>> dbbef1075c42ae4eb0a3a1a412d28465b26d6dac
     font-size: 3rem;
     font-weight: 800;
     text-shadow: 0px 0px 20px #868eff, 0px 0px 20px #868eff, 0px 0px 20px #868eff;
@@ -217,7 +209,6 @@ h5 {
     margin: 0 2em;
 }
 
-<<<<<<< HEAD
 /*parte da Eloise*/
 /*pagina do cadastro*/
 h1 {
@@ -261,13 +252,12 @@ input:focus:invalid {
 
 span {
     color: crimson;
-=======
-.col {
+}.col {
     display: flex;
     padding: 0 0 1.5em 0;
-}
+/* Eloise termina aqui*/
 
-.logo-1 {
+}.logo-1 {
     width: 60%;
 }
 
@@ -358,5 +348,4 @@ span {
     width: 100vw;
     height: 100vh;
     
->>>>>>> dbbef1075c42ae4eb0a3a1a412d28465b26d6dac
 }
