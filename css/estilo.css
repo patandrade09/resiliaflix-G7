@@ -2,10 +2,18 @@ body {
     text-decoration: none;
     background: black;
     color: #b1b1b1;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
+a {
+    color: #dadada;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 footer {
     width: 100%;
@@ -33,12 +41,16 @@ footer {
 .container1,
 .container2 {
     width: 50%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> dbbef1075c42ae4eb0a3a1a412d28465b26d6dac
 }
 
 .copyright {
     text-align: center;
-    /* padding: 2em 0 0 0; */
+    border-top: 2px solid #3c3c3c;
+    padding: 2em 0 0 0;
 }
 
 .banner {
@@ -51,7 +63,6 @@ footer {
     border: none;
     color: white;
 }
-
 
 .btn-outline-success {
     border: 1px solid #8a20ec;
@@ -66,10 +77,24 @@ footer {
 }
 
 .btn-primary {
-    color: #fff;
+    color: #204332;
     background-color: #212529;
-    border-color: #7429b8;
+    border-color: #606060;
     margin-right: 1em;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #f6b087;
+    border-color: #f6b087;
+    box-shadow: 0 0 20px 0.25rem rgb(255 86 91);
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity))!important;
+    height: 80px;
 }
 
 .form-control {
@@ -112,9 +137,20 @@ footer {
 }
 
 .btn-secondary {
+    color: #73cfd9;
+    background-color: #1ff1fc;
+    border-color: transparent;
+    box-shadow: 1px 3px 14px #2d92b7;
+}
+
+.btn-secondary:hover {
     color: #fff;
-    background-color: #8a20ec;
-    border-color: #8a20ec;
+    background-color: #ffffff;
+    border-color: #2ac5f4;
+}
+
+.btn-secondary a {
+    color: #1f565d;
 }
 
 .btn-check:focus+.btn-outline-success,
@@ -136,15 +172,37 @@ footer {
 
 h2 {
     font-weight: bolder;
-    color: #bfe5ff;
-    margin-bottom: 0.65em;
+    font-size: 2em;
+    margin-bottom: 0;
+    color: #727272;
 }
 
+<<<<<<< HEAD
 .h5,
 h5 {
+=======
+
+.h5, h5 {
+>>>>>>> dbbef1075c42ae4eb0a3a1a412d28465b26d6dac
     font-size: 3rem;
     font-weight: 800;
     text-shadow: 0px 0px 20px #868eff, 0px 0px 20px #868eff, 0px 0px 20px #868eff;
+}
+
+.menu h2,
+.creditos h2 {
+    margin-left: 1em;
+}
+
+
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 0.75em;
 }
 
 .navbar-dark .navbar-toggler {
@@ -159,6 +217,7 @@ h5 {
     margin: 0 2em;
 }
 
+<<<<<<< HEAD
 /*parte da Eloise*/
 /*pagina do cadastro*/
 h1 {
@@ -202,4 +261,102 @@ input:focus:invalid {
 
 span {
     color: crimson;
+=======
+.col {
+    display: flex;
+    padding: 0 0 1.5em 0;
+}
+
+.logo-1 {
+    width: 60%;
+}
+
+
+.logo-1 p {
+    margin: 1.5rem;
+}
+
+.modal-backdrop.show {
+    opacity: .5;
+    display: none;
+}
+
+.menu,
+.creditos {
+    width: 20%;
+}
+
+.menu h2, .creditos h2 {
+    margin: 0.5em 1em;
+    font-size: 1.5em;
+}
+
+#error-busca {
+    text-align: center;
+}
+
+.botao-modal {
+    color: #ffffff;
+    background-color: #252525;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+#poster img {
+    width: 150px;
+    margin: 0em 2em 0 0;
+}
+
+.layout {
+    display: flex;
+}
+
+.layout {
+    margin: 2em;
+    display: flex;
+}
+
+
+
+#error-busca {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 1px 2px 20px 0px #3e3e3e;
+    pointer-events: auto;
+    background-color: #3b3b3b;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-header {
+    border-bottom: 1px solid #575757;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0;
+}
+
+
+
+/* pagina inicial de cadastro */
+
+.principal-banner {
+    background: url(/img/banner-inicial.jpg);
+    width: 100vw;
+    height: 100vh;
+    
+>>>>>>> dbbef1075c42ae4eb0a3a1a412d28465b26d6dac
 }
