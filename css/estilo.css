@@ -30,9 +30,10 @@ footer {
     margin: 0 auto;
 }
 
-.container1, .container2 {
-    width:50%;
-    
+.container1,
+.container2 {
+    width: 50%;
+
 }
 
 .copyright {
@@ -47,7 +48,7 @@ footer {
 }
 
 .btn-outline-success {
-    border:none;
+    border: none;
     color: white;
 }
 
@@ -86,7 +87,7 @@ footer {
     -moz-appearance: none;
     appearance: none;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .form-control:focus {
@@ -97,7 +98,8 @@ footer {
     box-shadow: 0 0 0 0.25rem rgb(34 34 34);
 }
 
-.btn-primary a, .btn-secondary a  {
+.btn-primary a,
+.btn-secondary a {
     color: #fff;
     text-decoration: none;
     background-color: none;
@@ -115,7 +117,8 @@ footer {
     border-color: #8a20ec;
 }
 
-.btn-check:focus+.btn-outline-success, .btn-outline-success:focus {
+.btn-check:focus+.btn-outline-success,
+.btn-outline-success:focus {
     box-shadow: none;
 }
 
@@ -137,15 +140,16 @@ h2 {
     margin-bottom: 0.65em;
 }
 
-.h5, h5 {
+.h5,
+h5 {
     font-size: 3rem;
     font-weight: 800;
     text-shadow: 0px 0px 20px #868eff, 0px 0px 20px #868eff, 0px 0px 20px #868eff;
 }
 
 .navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.55);
-    border-color: rgba(255,255,255,.1);
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .1);
     margin: 0 1em 0 0;
 }
 
@@ -155,6 +159,7 @@ h2 {
     margin: 0 2em;
 }
 
+/*parte da Eloise*/
 /*pagina do cadastro*/
 h1 {
     text-align: center;
@@ -179,4 +184,22 @@ button[type=submit]:hover,
 
 form button.btn-secondary {
     margin-top: 1.5em;
+}
+
+/*imail invalido*/
+input:invalid {
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+span {
+    color: crimson;
 }

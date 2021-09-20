@@ -15,6 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="./js/cadastro.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +58,7 @@
     </header>
 
     <h1>Cadastro</h1>
-    
+
     <div class="container">
 
         <form>
@@ -86,19 +90,34 @@
             </div>
 
             <!--Endereço-->
-            <!--Rua-->
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-7">
-                    <label class="form-label" for="rua">Rua:</label>
-                    <input class="form-control" placeholder="Rua" type="text" name="rua">
+                <div class="col-3">
+                    <!--CEP-->
+                    <label class="form-label" for="cep">CEP:</label>
+                    <input id="cep" class="form-control" placeholder="CEP" type="text" name="cep">
                 </div>
-                <div class="col-1">
+                <div class="col">
+                    <!--rua-->
+                    <label class="form-label" for="rua">Rua:</label>
+                    <input id="rua" class="form-control" placeholder="Rua" type="text" name="rua">
+                    <div id="cepInvalido"></div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <!--bairro-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <label class="form-label" for="bairro">Bairro: </label>
+                    <input id="bairro" class="form-control" placeholder="Bairro" type="text" name="bairro">
+                </div>
+                <div class="col-2">
                     <!--Numero-->
                     <label class="form-label" for="numero">Numero:</label>
                     <input class="form-control" placeholder="Numero" type="text" name="numero">
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                     <!--Complemento-->
                     <label class="form-label" for="complemento">Complemento:</label>
                     <input id="complemento" type="text" class="form-control" placeholder="Complemento"
@@ -110,59 +129,15 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col">
-                    <!--CEP-->
-                    <label class="form-label" for="cep">CEP:</label>
-                    <input id="cep" class="form-control" placeholder="CEP" type="text" name="cep">
-                </div>
-                <div class="col">
-                    <!--Bairro-->
-                    <label class="form-label" for="bairro">Bairro: </label>
-                    <input class="form-control" placeholder="Bairro" type="text" name="bairro">
-                </div>
-                <div class="col-1"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col">
                     <!--Estado-->
                     <label class="form-label" for="estado">Estado:</label>
-                    <!--Seleção-->
-                    <select class="form-select" name="estado">
-                        <option value="ac">Acre</option>
-                        <option value="al">Alagoas</option>
-                        <option value="am">Amazonas</option>
-                        <option value="ap">Amapá</option>
-                        <option value="ba">Bahia</option>
-                        <option value="ce">Ceará</option>
-                        <option value="df">Distrito Federal</option>
-                        <option value="es">Espírito Santo</option>
-                        <option value="go">Goiás</option>
-                        <option value="ma">Maranhão</option>
-                        <option value="mt">Mato Grosso</option>
-                        <option value="ms">Mato Grosso do Sul</option>
-                        <option value="mg">Minas Gerais</option>
-                        <option value="pa">Pará</option>
-                        <option value="pb">Paraíba</option>
-                        <option value="pr">Paraná</option>
-                        <option value="pe">Pernambuco</option>
-                        <option value="pi">Piauí</option>
-                        <option value="rj">Rio de Janeiro</option>
-                        <option value="rn">Rio Grande do Norte</option>
-                        <option value="ro">Rondônia</option>
-                        <option value="rs">Rio Grande do Sul</option>
-                        <option value="rr">Roraima</option>
-                        <option value="sc">Santa Catarina</option>
-                        <option value="se">Sergipe</option>
-                        <option value="sp">São Paulo</option>
-                        <option value="to">Tocantins</option>
-                    </select>
+                    <input id="uf" class="form-control" placeholder="Estado" type="text" name="cidade">
                 </div>
 
                 <div class="col">
                     <!--Cidade-->
                     <label class="form-label" for="cidade">Cidade: </label>
-                    <input class="form-control" placeholder="Cidade" type="text" name="cidade">
+                    <input id="cidade" class="form-control" placeholder="Cidade" type="text" name="cidade">
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -174,7 +149,9 @@
                     <!-- Login-->
                     <!--E-mail-->
                     <label class="form-label" for="email">E-mail: </label>
-                    <input class="form-control" placeholder="E-mail" type="text" name="email">
+                    <input id="email" class="form-control" placeholder="E-mail" type="email" name="email"
+                        onblur="validarEmail()" onfocus="redefinirMsg()" id="email" />
+                    <span id="error-email"></span>
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -183,13 +160,13 @@
                 <div class="col">
                     <!--Senha-->
                     <label class="form-label" for="pwd">Senha: </label>
-                    <input class="form-control" placeholder="Senha" type="password" name="pwd">
+                    <input id="senha" class="form-control" placeholder="Senha" type="password" name="pwd">
                 </div>
 
                 <div class="col">
                     <!--confirmação-->
                     <label class="form-label" for="pwdConfir">Confirme a senha: </label>
-                    <input class="form-control" placeholder="Senha" type="password" name="pwdConfir">
+                    <input id="confirma" class="form-control" placeholder="Senha" type="password" name="pwdConfir">
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -217,5 +194,7 @@
     </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
 </html>
