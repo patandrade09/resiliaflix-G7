@@ -211,6 +211,9 @@ h2 {
 
 /*parte da Eloise*/
 /*pagina do cadastro*/
+.cadastro{
+    margin-top: 20vh;
+}
 h1 {
     text-align: center;
 
@@ -237,7 +240,7 @@ form button.btn-secondary {
 }
 
 /*imail invalido*/
-input:invalid {
+#email:invalid {
     border-color: crimson;
     box-shadow: 0px 0px 3px crimson;
 }
