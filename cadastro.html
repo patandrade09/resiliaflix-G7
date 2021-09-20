@@ -7,25 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
-        integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet'>
+    integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="./js/cadastro.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container-fluid">
+            <div class="container-fluid">
             <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
               aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,18 +102,19 @@
     
 
     <div class="container cadastro">
-        <h1>Cadastro</h1>
+        <h1>Sign up here</h1>
+        <br>
         <form action="index.html" >
             <!-- Dados Pessoais-->
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-5">
-                    <label class="form-label" for="nome">Nome: </label>
+                    <label class="form-label" for="nome">Name: </label>
                     <input class="form-control" placeholder="Nome" type="text" name="email">
                 </div>
 
                 <div class="col-5">
-                    <label class="form-label" for="sobrenome">Sobrenome: </label>
+                    <label class="form-label" for="sobrenome">Last name: </label>
                     <input class="form-control" placeholder="Sobrenome" type="text" name="sobrenome">
                 </div>
                 <div class="col-1"></div>
@@ -133,12 +137,12 @@
                 <div class="col"></div>
                 <div class="col-5">
                     <!--CEP-->
-                    <label class="form-label" for="cep">CEP:</label>
+                    <label class="form-label" for="cep">Zipcode:</label>
                     <input id="cep" class="form-control" placeholder="CEP" type="text" name="cep">
                 </div>
                 <div class="col-5">
                     <!--rua-->
-                    <label class="form-label" for="rua">Rua:</label>
+                    <label class="form-label" for="rua">Address:</label>
                     <input id="rua" class="form-control" placeholder="Rua" type="text" name="rua">
                     <div id="cepInvalido"></div>
                 </div>
@@ -148,17 +152,17 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-5">
-                    <label class="form-label" for="bairro">Bairro: </label>
+                    <label class="form-label" for="bairro">District: </label>
                     <input id="bairro" class="form-control" placeholder="Bairro" type="text" name="bairro">
                 </div>
                 <div class="col-2">
                     <!--Numero-->
-                    <label class="form-label" for="numero">Numero:</label>
+                    <label class="form-label" for="numero">Number:</label>
                     <input class="form-control" placeholder="Numero" type="text" name="numero">
                 </div>
                 <div class="col-3">
                     <!--Complemento-->
-                    <label class="form-label" for="complemento">Complemento:</label>
+                    <label class="form-label" for="complemento">Address 2:</label>
                     <input id="complemento" type="text" class="form-control" placeholder="Complemento"
                         name="complemento">
                 </div>
@@ -169,13 +173,13 @@
                 <div class="col-1"></div>
                 <div class="col-5">
                     <!--Estado-->
-                    <label class="form-label" for="estado">Estado:</label>
+                    <label class="form-label" for="estado">State:</label>
                     <input id="uf" class="form-control" placeholder="Estado" type="text" name="cidade">
                 </div>
 
                 <div class="col-5">
                     <!--Cidade-->
-                    <label class="form-label" for="cidade">Cidade: </label>
+                    <label class="form-label" for="cidade">City: </label>
                     <input id="cidade" class="form-control" placeholder="Cidade" type="text" name="cidade">
                 </div>
                 <div class="col-1"></div>
@@ -198,13 +202,13 @@
                 <div class="col-1"></div>
                 <div class="col-5">
                     <!--Senha-->
-                    <label class="form-label" for="pwd">Senha: </label>
+                    <label class="form-label" for="pwd">Password: </label>
                     <input id="senha" class="form-control" placeholder="Senha" type="password" name="pwd">
                 </div>
 
                 <div class="col-5">
                     <!--confirmação-->
-                    <label class="form-label" for="pwdConfir">Confirme a senha: </label>
+                    <label class="form-label" for="pwdConfir">Confirm your password: </label>
                     <input id="confirma" class="form-control" placeholder="Senha" type="password" name="pwdConfir">
                 </div>
                 <div class="col-1"></div>
@@ -214,10 +218,10 @@
 
                 <div class="col-1">
                     <!-- Botão enviar e limpar-->
-                    <button class=" btn-secondary" type="submit" name="enviar" value="foo">Enviar</button>
+                    <button class=" btn-secondary" type="submit" name="enviar" value="foo">Send</button>
                 </div>
                 <div class="col-1">
-                    <button class=" btn-secondary" type="reset" name="limpar" value="foo">Limpar</button>
+                    <button class=" btn-secondary" type="reset" name="limpar" value="foo">Reset</button>
                 </div>
 
             </div>
