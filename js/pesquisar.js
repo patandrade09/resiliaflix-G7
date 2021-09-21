@@ -2,6 +2,11 @@ const busca = document.querySelector('#busca-rapida');
 const buscar = document.getElementById('botao-busca-rapida');
 const form = document.getElementById('formulario');
 
+function mudaValue(valor){
+    busca.value = valor
+    buscar.click()
+}
+
 function mostraModal(req) {
     $('#titulo').html(req.Title)
     $('#duracao-filme').html(`<strong>Duração:</strong> ${req.Runtime}`);
