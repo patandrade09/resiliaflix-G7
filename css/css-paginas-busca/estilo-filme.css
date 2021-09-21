@@ -1,16 +1,24 @@
 .container-personal {
     padding-top: 0.5em;
+    color: aliceblue;
+}
+
+#titulo-filme {
+    color: rgb(226, 233, 238);
+    font-size: 1.5em;
 }
 
 .texto {
     padding-top: 1.5em;
     font-size: 1em;
+    color: aliceblue;
 }
 
 .detalhes {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
+    color: aliceblue;
 }
 
 .titulo {
@@ -18,12 +26,14 @@
     flex-direction: column;
     font-size: 1.7em;
     align-items: baseline;
+    color: aliceblue;
 }
 
 .logo {
     width: 40%;
     height: auto;
     margin-right: 1em;
+    color: aliceblue;
 }
 
 .campo-pesquisa {
@@ -31,6 +41,7 @@
     margin: auto;
     max-width: 50%;
     padding-top: 1em;
+    color: aliceblue;
 }
 
 .search-a-movie {
@@ -39,12 +50,14 @@
     max-width: 50%;
     padding-top: 1.5em;
     font-size: 2em;
+    color: aliceblue;
 }
 
 #rating-filme,
 #classificacao-filme {
     padding-top: 0.3em;
     font-size: 20px;
+    color: aliceblue;
 }
 
 .erro {
@@ -52,4 +65,5 @@
     justify-content: center;
     padding: 25px;
     font-size: 25px;
+    color: aliceblue;
 }

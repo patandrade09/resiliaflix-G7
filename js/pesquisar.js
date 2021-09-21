@@ -1,5 +1,6 @@
 const busca = document.querySelector('#busca-rapida');
 const buscar = document.getElementById('botao-busca-rapida');
+const form = document.getElementById('formulario');
 
 function mudaValue(valor){
     busca.value = valor
@@ -37,7 +38,7 @@ function removeModal() {
     $('#modal-filme').css('');
 }
 
-buscar.addEventListener('click', function pesquisaFilme (evento) {
+form.addEventListener('submit', function pesquisaFilme (evento) {
 
       
     evento.preventDefault();
@@ -62,3 +63,4 @@ buscar.addEventListener('click', function pesquisaFilme (evento) {
         }
     })
 })
+
