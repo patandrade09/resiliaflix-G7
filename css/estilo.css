@@ -132,10 +132,11 @@ footer {
     border-color: #63388a;
 }
 
-.btn-secondary {
+.botao-cadastrar {
     color: #73cfd9;
     background-color: #1ff1fc;
     border-color: transparent;
+    padding: 1em 2em;
     box-shadow: 1px 3px 14px #2d92b7;
 }
 
@@ -262,8 +263,6 @@ h2 {
     display: flex;
 }
 
-
-
 #error-busca {
     text-align: center;
     width: 100%;
@@ -300,8 +299,134 @@ h2 {
 /* pagina inicial de cadastro */
 
 .principal-banner {
-    background: url(/img/banner-inicial.jpg);
-    width: 100vw;
+    background: linear-gradient( 
+180deg
+ , rgba(255,255,255,0) 0%, rgb(1 1 1) 100%), url(/img/banner-inicial.png);
+    width: 100%;
     height: 100vh;
-    
+    display: flex;
+    background-size: cover;
+    align-items: center;
 }
+
+.welcome {
+    font-size: 1.5em;
+    max-width: 45%;
+    margin: 2em;
+}
+
+.welcome h2 {
+    font-weight: bolder;
+    font-size: 1em;
+    margin-bottom: 0;
+    color: #727272;
+}
+
+.welcome h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 800;
+    color: #fff;
+}
+
+.text {
+    margin: 1em 0;
+}
+
+.coluna {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/darth-vader.png) no-repeat;
+    display: flex;
+    background-size: contain;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.coluna-2 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( 
+270deg
+ , rgba(255,255,255,0) 0%, rgb(1 1 1) 100%), url(/img/yoda.png) center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.coluna-3 {
+    width: 100%;
+    height: auto;
+}
+
+.coluna-4 {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+
+.plano1, .plano2, .plano3 {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 2em;
+    height: auto;
+    display: block;
+    margin: 1em;
+    color: #9b9b9b;
+    background: #161617;
+    text-align: center;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.h3, h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #a4a4a4;
+}
+
+.plano3 h3:after {
+    width: 10%;
+    color: #fff;
+    height: 10px;
+
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
+
+.menu h2, .creditos h2 {
+    margin: 0.5em 0em;
+    font-size: 1.5em;
+}
+
+.plano1 h3:after, .plano2 h3:after, .plano3 h3:after {
+    content: "";
+    display: block;
+    width: 1.25em;
+    text-align: left;
+    border-bottom: 0.3em solid #c4c4c4;
+    margin: 1.2em auto;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background: #212529;
+}
+
+
