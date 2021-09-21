@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-  
+
 
 </head>
 
@@ -40,7 +40,7 @@
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
@@ -55,51 +55,54 @@
           </ul>
 
           <form class="d-flex">
-            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..." aria-label="Search" required>
-            
+            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..."
+              aria-label="Search" required>
+
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              type="submit" id="botao-busca-rapida">
               <i class="fas fa-search"></i>
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h2 id='titulo'></h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                
-                  
-                  
-  <div class="modal-body" id='modal-filme'></div>
-  <div class='layout'>
-    <div id='poster'></div>
-  
-  
-  <div class='description'>
-    <div id='cast'></div>
-    <div id='duracao-filme'></div>
-    <div id='ano-lancamento'></div>
-    <div id='geracao-filme'></div>
-    <div id='rating-filme'></div>
-    <div id='textos-filme'></div>
 
-  </div>
-  <div id='texto-filme'></div>
-  <div id='error-busca'>Filme não encontrado</div>
-</div>
+
+
+                  <div class="modal-body" id='modal-filme'></div>
+                  <div class='layout'>
+                    <div id='poster'></div>
+
+
+                    <div class='description'>
+                      <div id='cast'></div>
+                      <div id='duracao-filme'></div>
+                      <div id='ano-lancamento'></div>
+                      <div id='geracao-filme'></div>
+                      <div id='rating-filme'></div>
+                      <div id='textos-filme'></div>
+
+                    </div>
+                    <div id='texto-filme'></div>
+                    <div id='error-busca'>Filme não encontrado</div>
                   </div>
-                  
                 </div>
+
               </div>
             </div>
-
-          </form>
-          <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
-          <button type="button" class="btn btn-secondary"><a href='#'>Sign Up</a></button>
         </div>
+
+        </form>
+        <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
+        <button type="button" class="btn btn-secondary"><a href='#'>Sign Up</a></button>
+      </div>
 
       </div>
     </nav>
@@ -158,32 +161,70 @@
     </div>
 
     <div class="owl-carousel owl-theme">
-      <div class="item" id="1">
+      <div class="item" id="1" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("Phantom Menace")'>
       </div>
-      <div class="item" id="2">
+      <div class="item" id="2" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("of the clones")'>
       </div>
-      <div class="item" id="3">
+      <div class="item" id="3" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("Revenge of the Sith")'>
       </div>
-      <div class="item" id="4">
+      <div class="item" id="4" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("star wars")'>
       </div>
-      <div class="item" id="5">
+      <div class="item" id="5" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("The Empire Strikes Back")'>
       </div>
-      <div class="item" id="6">
+      <div class="item" id="6" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("Return of the Jedi")'>
       </div>
-      <div class="item" id="7">
+      <div class="item" id="7" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("The Force Awakens")'>
       </div>
-      <div class="item" id="8">
+      <div class="item" id="8" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("rogue one")'>
       </div>
-      <div class="item" id="9">
+      <div class="item" id="9" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("The Last Jedi")'>
       </div>
-      <div class="item" id="10">
+      <div class="item" id="10" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("A Star Wars Story")'>
       </div>
-      <div class="item" id="11">
+      <div class="item" id="11" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("clone wars")'>
       </div>
-      <div class="item" id="12">
+      <div class="item" id="12" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick='mudaValue("mandalorian")'>
       </div>
     </div>
-
+<!-- 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </main>
   <footer>
     <div class='container-footer'>
@@ -231,4 +272,5 @@
 <script src="js/carrossel.js"></script>
 <script src='./js/pesquisar.js'></script>
 <script src="js/filmeCarrossel.js"></script>
+
 </html>

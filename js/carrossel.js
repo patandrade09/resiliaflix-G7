@@ -33,7 +33,8 @@ pegaPoster(nomeFilmes);
 
 function criaCarrossel() {
     $('.owl-carousel').owlCarousel({
-        loop:true,
+        // loop:true,
+        mouseDrag:false,
         margin:10,
         nav:true,
         responsive:{
