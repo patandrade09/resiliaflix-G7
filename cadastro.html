@@ -23,6 +23,7 @@
     <script src="./js/cadastro.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 
 <body>
@@ -48,51 +49,7 @@
                 </li>
               </ul>
     
-              <form class="d-flex">
-                <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..." aria-label="Search" required>
-                
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
-                  <i class="fas fa-search"></i>
-                </button>
-    
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h2 id='titulo'></h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                    
-                      
-                      
-      <div class="modal-body" id='modal-filme'></div>
-      <div class='layout'>
-        <div id='poster'></div>
-      
-      
-      <div class='description'>
-        <div id='cast'></div>
-        <div id='duracao-filme'></div>
-        <div id='ano-lancamento'></div>
-        <div id='geracao-filme'></div>
-        <div id='rating-filme'></div>
-        <div id='textos-filme'></div>
-    
-      </div>
-      <div id='texto-filme'></div>
-      <div id='error-busca'>Filme não encontrado</div>
-    </div>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-    
-              </form>
               <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
-              <button type="button" class="btn btn-secondary"><a href='#'>Sign Up</a></button>
             </div>
     
           </div>
@@ -123,11 +80,11 @@
                 <div class="col-1"></div>
                 <div class="col-5">
                     <label class="form-label" for="rg">RG:</label>
-                    <input class="form-control" placeholder="RG" type="text" name="rg">
+                    <input class="form-control" placeholder="RG" type="number" name="rg">
                 </div>
                 <div class="col-5">
                     <label class="form-label" for="cpf">CPF:</label>
-                    <input class="form-control" placeholder="CPF" type="text" name="cpf">
+                    <input class="form-control" placeholder="CPF" type="number" name="cpf">
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -138,7 +95,7 @@
                 <div class="col-5">
                     <!--CEP-->
                     <label class="form-label" for="cep">Zipcode:</label>
-                    <input id="cep" class="form-control" placeholder="CEP" type="text" name="cep">
+                    <input id="cep" class="form-control" placeholder="CEP" type="number" name="cep">
                 </div>
                 <div class="col-5">
                     <!--rua-->
@@ -158,7 +115,7 @@
                 <div class="col-2">
                     <!--Numero-->
                     <label class="form-label" for="numero">Number:</label>
-                    <input class="form-control" placeholder="Numero" type="text" name="numero">
+                    <input class="form-control" placeholder="Numero" type="number" name="numero">
                 </div>
                 <div class="col-3">
                     <!--Complemento-->

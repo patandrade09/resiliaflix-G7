@@ -39,13 +39,10 @@ $(document).ready(function () {
                         $("#cidade").val(dados.localidade);
                         $("#uf").val(dados.uf);
                         $("#complemento").val(dados.complemento);
-                    } else {
-                        //CEP pesquisado não foi encontrado.
-                        limpa_formulário_cep();
-                        // alert("CEP não encontrado.");
                     }
                 });
             } else {
+                $('#cep').css('border-color' ,`red`);
                 //cep é inválido.
                 limpa_formulário_cep();
                 alert("Formato de CEP inválido.");
@@ -56,7 +53,7 @@ $(document).ready(function () {
         }
     });
 });
-
+//validação do email
 function validarEmail() {
     var email = document.querySelector('#email');
     var error = document.querySelector('#error-email');
@@ -64,7 +61,6 @@ function validarEmail() {
     if (!email.checkValidity()) {
         error.innerHTML = "Email invalido";
     }
-
 }
 
 function redefinirMsg() {
