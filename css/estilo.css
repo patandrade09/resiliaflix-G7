@@ -209,71 +209,8 @@ h2 {
     margin: 0 2em;
 }
 
-/*parte da Eloise*/
-/*pagina do cadastro*/
-.cadastro{
-    margin-top: 20vh;
-}
-h1{
-    font-size: 50px;
-    text-align: center;
 
-}
-input[type=text], input[type=password], input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    /*border: 1px solid #555;*/
-    outline: none;
-}
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
-    background-color: lightblue;
-    color:black;
-}
-
-button[type=submit],
-[type=reset] {
-
-    padding: 10px;
-    color: #fff;
-    background-color: #8a20ec;
-    border-color: #8a20ec;
-    border-radius: 8px;
-}
-
-button[type=submit]:hover,
-[type=reset]:hover {
-    background-color: rgb(167, 158, 158);
-
-}
-
-form button.btn-secondary {
-    margin-top: 1.5em;
-}
-
-/*imail invalido*/
-#email:invalid {
-    border-color: crimson;
-    box-shadow: 0px 0px 3px crimson;
-}
-
-input:focus {
-    outline: none;
-}
-
-input:focus:invalid {
-    box-shadow: none;
-}
-
-span {
-    color: crimson;
-}.col {
-    display: flex;
-    padding: 0 0 1.5em 0;
-/* Eloise termina aqui*/
-
-}.logo-1 {
+.logo-1 {
     width: 60%;
 }
 

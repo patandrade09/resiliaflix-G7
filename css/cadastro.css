@@ -1,0 +1,61 @@
+/*parte da Eloise*/
+/*pagina do cadastro*/
+.cadastro{
+    margin-top: 20vh;
+}
+h1{
+    margin: 1em 0.5em;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+
+}
+input[type=text], input[type=password], input[type=email], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(62, 5, 80);
+}
+button[type=submit],
+[type=reset] {
+
+    padding: 10px;
+    color: #fff;
+    background-color: #8a20ec;
+    border-color: #8a20ec;
+    border-radius: 8px;
+}
+
+button[type=submit]:hover,
+[type=reset]:hover {
+    background-color: rgb(167, 158, 158);
+
+}
+
+form button.btn-secondary {
+    margin-top: 1.5em;
+}
+
+/*imail invalido*/
+#email:invalid {
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+span {
+    color: crimson;
+}.col {
+    display: flex;
+    padding: 0 0 1.5em 0;
+}
+/* Eloise termina aqui*/
