@@ -82,7 +82,7 @@
     text-align: center;
     transform: perspective(800px) rotateX(25deg) translateY(40%);
     animation-name: subir;
-    animation-duration: 45s;
+    animation-duration: 50s;
     animation-timing-function: linear;
   }
   @keyframes subir {

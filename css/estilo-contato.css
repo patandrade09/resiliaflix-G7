@@ -1,0 +1,26 @@
+main {
+    color: #f2cb06;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #f2cb06;
+}
+
+.card-contato{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2cb06;
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
