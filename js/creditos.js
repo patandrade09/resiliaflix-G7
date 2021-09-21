@@ -1,1 +1,1 @@
-setTimeout(function(){ window.location.href='index.html'; }, 45000)
+setTimeout(function(){ window.location.href='contatos.html'; }, 50000)

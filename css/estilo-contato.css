@@ -1,0 +1,51 @@
+main {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: ; */
+    min-height: 100vh;
+    margin-bottom: 0;
+}
+
+h1{
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.all-contatos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: white;
+}
+
+.card-contato{
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(104, 104, 104);
+    flex-direction: column;
+    border-radius: 10px;
+    min-width: 17%;
+}
+.fab{
+    font-size: 2em;
+    margin: 0.5em 0.2em;
+}
+
+
+.perfil img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    
+}
+
+footer{
+    padding-top: 0;
+}
