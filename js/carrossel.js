@@ -1,7 +1,7 @@
 function pegaPoster(movie) {
     for (let i = 0; i < movie.length; i++) {
         $.ajax({
-            url: `http://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${movie[i]}`,
+            url: `https://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${movie[i]}`,
             success: function (req) {
                 $(`#${i + 1}`).append(
                     `<img src="${req.Poster}" alt="move"><h6>${req.Title}`
