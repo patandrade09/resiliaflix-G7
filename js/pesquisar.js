@@ -44,7 +44,7 @@ form.addEventListener('submit', function pesquisaFilme (evento) {
     evento.preventDefault();
 
     $.ajax({
-        url: `http://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${busca.value}`,
+        url: `https://www.omdbapi.com/?i=tt3896198&apikey=1c22c5f3&t=${busca.value}`,
         success: function(req) {
             console.log(req)
             if (req.Error) {
