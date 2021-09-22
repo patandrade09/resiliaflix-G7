@@ -1,6 +1,11 @@
 /*parte da Eloise*/
 /*pagina do cadastro*/
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body {
+    background-image: url("https://images7.alphacoders.com/568/568752.jpg");
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+}
 .cadastro{
     margin-top: 20vh;
 }
