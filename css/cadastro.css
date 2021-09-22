@@ -17,12 +17,13 @@
 
 input[type=text], input[type=password], input[type=email], input[type=number] {
     width: 100%;
-    padding: 12px 20px;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
     margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
+    border-bottom: 1px solid #1ff1fc;
     
-}
+  }
 button[type=submit],
 [type=reset] {
 
