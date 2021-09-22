@@ -1,7 +1,96 @@
-@media (max-width: 600px)
+@media (max-width: 489px)
 {
-    .btn {
-        display: none;
+    .principal-banner {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background-size: cover;
+        background-position-x: -600px;
+        background-position-y: 50px;
+        background-repeat: repeat;
+        align-items: center;
     }
- 
+
+    .coluna-2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background-position-x: -550px;
+        background-size: cover;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .welcome {
+        font-size: 1.5em;
+        max-width: 100%;
+        margin: 2em;
+    }
+
+    .coluna {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background-size: cover;
+        background-position-x: 100px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .logo-1 {
+        width: 100%;
+    }
+
+    .container-plano {
+        display: flex;
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    .col {
+        display: flex;
+        padding: 2.5em;
+        flex-direction: column;
+    }
+    
+    
+    .coluna-menu {
+        display: flex;
+        margin: 1.5em;
+        width: 100%;
+    }
+
+    .menu, .creditos {
+        width: 50%;
+    }
+
+
+}
+
+@media (max-width: 789px)
+{
+
+    .principal-banner {
+        background-position-x: -700px;
+        background-size: cover;
+    }
+
+    .coluna {
+        background-size: cover;
+        background-position-x: -400px;
+    }
+
+    .coluna-2 {
+        background-size: cover;
+        background-position-x: -600px;
+
+    }
+
+    .container-plano {
+        max-width: 80%;
+    }
+
+    .plano1, .plano2, .plano3 {
+        min-width: 33%;
+    }
 }
