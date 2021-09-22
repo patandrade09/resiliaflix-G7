@@ -93,4 +93,17 @@
     .plano1, .plano2, .plano3 {
         min-width: 33%;
     }
+
+    .logo-1 {
+        width: 100%;
+    }
+
+    .coluna-menu {
+        display: flex;
+        width: auto;
+    }
+
+    .menu, .creditos {
+        width: 50%;
+    }
 }
