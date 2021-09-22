@@ -8,7 +8,7 @@
   <title>ResiliaFLix ||| STAR WARS</title>
 
   <link rel="stylesheet" href="css/reset.css">
-
+  <link rel="stylesheet" href="css/mobile.css">
   <!-- CSS only -->
   <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
     integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet' />
@@ -44,23 +44,26 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="inicio.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="busca-filme.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Movies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="creditos.html">Contact</a>
             </li>
           </ul>
 
-          <form class="d-flex">
-            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..."
-              aria-label="Search" required>
 
+          <form class="d-flex" id='formulario'>
+            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..." aria-label="Search" required>
+            
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              type="submit" id="botao-busca-rapida">
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
+
               <i class="fas fa-search"></i>
             </button>
 
@@ -113,8 +116,7 @@
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
@@ -235,7 +237,6 @@
             StarFlix (ResiliaFLix) is a ficctional streaming project made by web development students with HTML, CSS,
             JavaScript and JQuery. All the pictures and movies are from IMDB API and they aren't used for commercial
             purposes.
-
           </p>
         </div>
         <div class="menu">
@@ -267,7 +268,7 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/carrossel.js"></script>
 <script src='./js/pesquisar.js'></script>
