@@ -382,7 +382,7 @@ h2 {
 .coluna {
     width: 100%;
     height: 100vh;
-    background: url(https://github.com/jeanetchichury/resiliaflix-G7/blob/master/img/darth-vader.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/jeanetchichury/resiliaflix-G7/master/img/darth-vader.png) no-repeat;
     display: flex;
     background-size: contain;
     justify-content: flex-end;
@@ -393,7 +393,7 @@ h2 {
     width: 100%;
     height: 100vh; 
     background: linear-gradient( 
-        178deg , rgba(255,255,255,0) 0%, rgb(1 1 1) 100%), url(https://github.com/jeanetchichury/resiliaflix-G7/blob/master/img/yoda.png);
+        178deg , rgba(255,255,255,0) 0%, rgb(1 1 1) 100%), url(https://raw.githubusercontent.com/jeanetchichury/resiliaflix-G7/master/img/yoda.png);
     display: flex;
     background-position-x: -300px;
     align-items: center;
