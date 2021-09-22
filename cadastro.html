@@ -24,45 +24,92 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="busca-filme.html">Search</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="creditos.html">Contact</a>
-                </li>
-              </ul>
-    
-              <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
-            </div>
-    
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    
-      
-        
-  
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="busca-filme.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creditos.html">Contact</a>
+            </li>
+          </ul>
+
+
+          <form class="d-flex" id='formulario'>
+            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..." aria-label="Search" required>
+            
+            <!-- Button trigger modal -->
+            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
+
+              <i class="fas fa-search"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 id='titulo'></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+
+
+                  <div class="modal-body" id='modal-filme'></div>
+                  <div class='layout'>
+                    <div id='poster'></div>
+
+
+                    <div class='description'>
+                      <div id='cast'></div>
+                      <div id='duracao-filme'></div>
+                      <div id='ano-lancamento'></div>
+                      <div id='geracao-filme'></div>
+                      <div id='rating-filme'></div>
+                      <div id='textos-filme'></div>
+
+                    </div>
+                    <div id='texto-filme'></div>
+                    <div id='error-busca'>Filme não encontrado</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+
+        </form>
+        <button type="button" class="btn btn-primary"><a href='./login.html'>Sign In</a></button>
+        <button type="button" class="btn btn-secondary"><a href='#'>Sign Up</a></button>
+      </div>
+
+      </div>
+    </nav>
+  </header>
+
     <div class="container-cadastro">
-      <h1 class="titulo">Sign up here</h1>
-        <i class="fas fa-user"></i>
+      <h1>Sign up here</h1>
+        
         <form action="index.html" >
             <!-- Dados Pessoais-->
             <div class="box1">
@@ -182,43 +229,42 @@
 
     <br>
     <footer>
-        <div class='container-footer'>
-          <div class='col'>
-            <div class='logo-1'>
-              <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
-              <p>
-                StarFlix (ResiliaFLix) is a ficctional streaming project made by web development students with HTML, CSS,
-                JavaScript and JQuery. All the pictures and movies are from IMDB API and they aren't used for commercial
-                purposes.
-    
-              </p>
-            </div>
-            <div class="menu">
-              <h2>About</h2>
-              <ul class='menu-footer'>
-                <li><a href='/index.html'>Home</a></li>
-                <li><a href='/creditos.html'>Search</a></li>
-                <li><a href='/creditos.html'>Credits</a></li>
-                <li><a href='/login.html'>Sign In</a></li>
-                <li><a href='/cadastro.html'>Sign Up</a></li>
-              </ul>
-            </div>
-            <div class="creditos">
-              <h2>Team</h2>
-              <ul class='menu-footer'>
-                <li><a href='https://github.com/eloisecoffe'>Eloise</a></li>
-                <li><a href='https://github.com/gabrielaalvescosta'>Gabriela</a></li>
-                <li><a href='https://github.com/jeanetchichury/'>Jean</a></li>
-                <li><a href='https://github.com/patandrade09'>Patrícia</a></li>
-                <li><a href='https://github.com/paulocarrilho'>Paulo</a></li>
-    
-              </ul>
-            </div>
+      <div class='container-footer'>
+        <div class='col'>
+          <div class='logo-1'>
+            <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
+            <p>
+              StarFlix (ResiliaFLix) is a ficctional streaming project made by web development students with HTML, CSS,
+              JavaScript and JQuery. All the pictures and movies are from IMDB API and they aren't used for commercial
+              purposes.
+            </p>
           </div>
-          <div class='copyright'>
-            Copyright 2021 - ResiliaFlix
+          <div class="menu">
+            <h2>About</h2>
+            <ul class='menu-footer'>
+              <li><a href='/index.html'>Home</a></li>
+              <li><a href='/creditos.html'>Search</a></li>
+              <li><a href='/creditos.html'>Credits</a></li>
+              <li><a href='/login.html'>Sign In</a></li>
+              <li><a href='/cadastro.html'>Sign Up</a></li>
+            </ul>
           </div>
-      </footer>
+          <div class="creditos">
+            <h2>Team</h2>
+            <ul class='menu-footer'>
+              <li><a href='https://github.com/eloisecoffe'>Eloise</a></li>
+              <li><a href='https://github.com/gabrielaalvescosta'>Gabriela</a></li>
+              <li><a href='https://github.com/jeanetchichury/'>Jean</a></li>
+              <li><a href='https://github.com/patandrade09'>Patrícia</a></li>
+              <li><a href='https://github.com/paulocarrilho'>Paulo</a></li>
+  
+            </ul>
+          </div>
+        </div>
+        <div class='copyright'>
+          Copyright 2021 - ResiliaFlix
+        </div>
+    </footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
