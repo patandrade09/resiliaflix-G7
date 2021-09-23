@@ -516,3 +516,9 @@ body > main > div.owl-carousel.owl-theme.owl-loaded > div.owl-nav > button.owl-n
 body > main > div.owl-carousel.owl-theme.owl-loaded > div.owl-nav > button.owl-prev{
     font-size: 50px;
 }
+
+/* esconde o menu */
+
+.esconde {
+    visibility: hidden;
+}

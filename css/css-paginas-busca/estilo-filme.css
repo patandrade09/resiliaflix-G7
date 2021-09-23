@@ -67,3 +67,15 @@
     font-size: 25px;
     color: aliceblue;
 }
+
+.btn-light {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-light:hover {
+    color: #ccc;
+    background-color: transparent;
+    border-color: transparent;
+}

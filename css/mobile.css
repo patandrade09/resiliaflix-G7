@@ -56,6 +56,13 @@
     .menu, .creditos {
         width: 50%;
     }
+
+    .owl-carousel .owl-item img {
+        box-shadow: 1px 2px 20px 1px #041010;
+        width: 90%;
+        height: auto;
+    
+    }
 }
 @media (max-width: 789px)
 {
