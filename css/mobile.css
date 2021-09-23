@@ -63,6 +63,10 @@
         height: auto;
     
     }
+
+    .coluna-footer {
+        flex-direction: column;
+    }
 }
 @media (max-width: 789px)
 {
@@ -97,4 +101,9 @@
     .menu, .creditos {
         width: 50%;
     }
+
+    .coluna-footer {
+        flex-direction: column;
+    }
+
 }

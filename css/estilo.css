@@ -519,3 +519,8 @@ body > main > div.owl-carousel.owl-theme.owl-loaded > div.owl-nav > button.owl-p
 .esconde {
     visibility: hidden;
 }
+
+.coluna-footer {
+    display: flex;
+    margin: 2em 0;
+}
