@@ -96,9 +96,22 @@ footer {
     height: 80px;
 }
 
+.campo-pesquisa {
+    display: flex;
+ 
+}
+
+.container-pesquisa-filme {
+    height: 40vh;
+    max-width: 75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .form-control {
     display: block;
-    width: 100%;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -120,6 +133,18 @@ footer {
     border-color: #00a5dd;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(34 34 34);
+}
+
+.btn-light {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-light:hover {
+    color: #ccc;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 /* botoes */ 
@@ -271,6 +296,7 @@ h2 {
 
 .menu, .creditos {
     width: 50%;
+    padding: 1.5em;
 }
 
 
@@ -523,5 +549,4 @@ body > main > div.owl-carousel.owl-theme.owl-loaded > div.owl-nav > button.owl-p
 .coluna-footer {
     display: flex;
     margin: 2em 0;
-    flex-direction: row;
 }

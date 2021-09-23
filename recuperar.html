@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover Password</title>
+    <!-- CSS only -->
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
+        integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Work+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styleteste.css">
+    <link rel="stylesheet" href="<link rel=" stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/recuperar.css">
+    <script src="js/reuperar.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="busca-filme.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="creditos.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- <audio autoplay>
+               <source src="img/yoda.mp3" type="audio/mpeg" />
+             </audio> -->
+
+                    <form class="d-flex">
+                        <input id="busca-rapida" class="form-control me-2" type="search"
+                            placeholder="Quickly search here..." aria-label="Search" required>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" type="submit" id="botao-busca-rapida">
+                            <i class="fas fa-search"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 id='titulo'></h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div id='error-busca'>Filme não encontrado</div>
+                                    <div class="modal-body" id='modal-filme'>
+                                        <div id='elenco'></div>
+                                        <div id='poster'></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <button type="button" class="btn btn-primary"><a href='login.html'>Sign In</a></button>
+                    <button type="button" class="btn btn-secondary"><a href='cadastro.html'>Sign Up</a></button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="containerR">
+        <div class="cardR">
+            <h1 class="tituloR" >I forgot my password</h1>
+            <label class="informacaoR"> Enter your email to get a password reset link.</label>
+            <div class="labelR">
+                <input type="text" id="emailR">
+                <label for="emailR">Email</label>
+            </div>
+            <div class="botaoR">
+               <a href="index.html"><button class="btnR">Recovery password</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+        <div class="labelR">
+            <label class="titulo">I forgot my email / password</label>
+            <br><br>
+            <label>
+            How do you prefer to reset your password?</label>
+            <br><br>
+            <label for="email"><input for="email" type="checkbox">E-mail</label><br>
+            <label><input type="checkbox">SMS</label>
+            <br><br>
+            <label>Enviaremos um email com instruções de como redefinir sua senha.</label>
+            <br><br>
+            <input type="text" placeholder="name@example.com">
+            <br>
+            <button class="btnR"type="submit" name="recuperar">Enviar por email</button>
+
+        </div>
+    </div> -->
+
+   
+
+    </body>
+
+</html>

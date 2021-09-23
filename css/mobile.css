@@ -65,12 +65,16 @@
     }
 
     .coluna-footer {
-        display:flex;.container-footer 
         flex-direction: column;
     }
-
+    
+    .container-pesquisa-filme {
+        width: 50vw;
+    }
 
 }
+
+
 @media (max-width: 789px)
 {
     .principal-banner {
@@ -97,7 +101,6 @@
     }
 
     .coluna-menu {
-        display: flex;
         width: auto;
     }
 
@@ -106,7 +109,6 @@
     }
 
     .coluna-footer {
-        display: flex;
         flex-direction: row;
     }
 
