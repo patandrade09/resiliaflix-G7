@@ -523,4 +523,5 @@ body > main > div.owl-carousel.owl-theme.owl-loaded > div.owl-nav > button.owl-p
 .coluna-footer {
     display: flex;
     margin: 2em 0;
+    flex-direction: row;
 }
