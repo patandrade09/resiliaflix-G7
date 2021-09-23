@@ -1,5 +1,5 @@
-let pesquisar = document.querySelector('#pesquisar-filme');
-let movie = document.getElementById('busca-filme')
+let pesquisar = document.querySelector('#pesquisar-filme'); //botao
+let movie = document.getElementById('busca-filme') //input
 
 pesquisar.addEventListener('click', function filme(evento) {
 

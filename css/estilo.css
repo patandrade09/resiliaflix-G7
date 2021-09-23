@@ -43,6 +43,7 @@ footer {
 .container1,
 .container2 {
     width: 50%;
+
 }
 
 .copyright {
@@ -252,10 +253,6 @@ h2 {
     margin: 0 2em;
 }
 
-.col {
-    display: flex;
-    padding: 0 0 1.5em 0;
-}
 
 .logo-1 {
     width: 60%;
