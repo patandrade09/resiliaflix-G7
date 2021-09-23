@@ -65,8 +65,11 @@
     }
 
     .coluna-footer {
+        display:flex;.container-footer 
         flex-direction: column;
     }
+
+
 }
 @media (max-width: 789px)
 {
@@ -103,7 +106,9 @@
     }
 
     .coluna-footer {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
+
 
 }
