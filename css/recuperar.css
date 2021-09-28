@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.containerR {
+    width: 100%;
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+}
+.cardR {
+    left:20;
+    background-color: #363636;
+    padding: 30px;
+    border-radius:4px;
+    width: 450px;
+    box-shadow: 3px 3px 1px 0px #4bd7e7b5;
+    
+}
+.tituloR {
+    text-align: center;
+    font-size:35px;
+    font-weight:bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    color: white
+}
+.informacaoR{
+    color: white;
+}
+.labelR input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #645a5a;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius:0;
+}
+.labelR {
+    position: relative;
+    padding-top:  13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.labelR input:focus{
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+.labelR label {
+    color: rgb(7, 7, 7);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-out;
+    margin-top: 17px;
+}
+.labelR input:focus + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: rgb(255, 255, 255)
+
+}
+
+.btnR {
+    background-color:transparent;
+    border-color:rgb(102 240 255);
+    padding: 7px;
+    color: white;
+    margin-top: 20px;
+    border-radius:4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+.btnR:hover{
+    background-color:#030000;
+
+}
+.botaoR {
+    display: flex;
+    justify-content: center;
+}

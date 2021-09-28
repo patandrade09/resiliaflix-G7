@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
+    integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="./js/cadastro.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+ 
+    
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicial.html"><img width='150' height='auto' src='img/logo.svg' /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="esconde collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="busca-filme.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatos.html">Contact</a>
+            </li>
+          </ul>
+
+
+          
+       
+      </div>
+      <button type="button" class="btn btn-primary"><a href='login.html'>Sign In</a></button>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container-cadastro">
+      <h1>Sign up here</h1>
+        
+        <form action="index.html" >
+            <!-- Dados Pessoais-->
+            <div class="box1">
+              
+            <div class="row">
+              
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input class="form-control" placeholder="Name" type="text" name="email">
+                </div>
+              
+
+                <div class="col-5">
+
+                    <input class="form-control" placeholder="Last name" type="text" name="sobrenome">
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input class="form-control" placeholder="RG" type="number" name="rg">
+                </div>
+                <div class="col-5">
+                    <input class="form-control" placeholder="CPF" type="number" name="cpf">
+                </div>
+                <div class="col-1"></div>
+            </div>
+          
+
+            <!--Endereço-->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <!--CEP-->
+                    <input id="cep" class="form-control" placeholder="Zipcode" type="number" name="cep">
+                </div>
+                <div class="col-5">
+                    <!--rua-->
+                    <input id="rua" class="form-control" placeholder="Address" type="text" name="rua">
+                    <div id="cepInvalido"></div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <!--bairro-->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <input id="bairro" class="form-control" placeholder="District" type="text" name="bairro">
+                </div>
+                <div class="col-2">
+                    <!--Numero-->
+                    <input class="form-control" placeholder="Number" type="number" name="numero">
+                </div>
+                <div class="col-3">
+                    <!--Complemento-->
+                    <input id="complemento" type="text" class="form-control" placeholder="Address 2"
+                        name="complemento">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <!--Estado-->
+                    <input id="uf" class="form-control" placeholder="State" type="text" name="cidade">
+                </div>
+
+                <div class="col-5">
+                    <!--Cidade-->
+                    <input id="cidade" class="form-control" placeholder="City" type="text" name="cidade">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-9">
+
+                    <!-- Login-->
+                    <!--E-mail-->
+                    <input id="email" class="form-control" placeholder="E-mail" type="email" name="email"
+                        onblur="validarEmail()" onfocus="redefinirMsg()" id="email" />
+                    <span id="error-email"></span>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <!--Senha-->
+                    <input id="senha" class="form-control" placeholder="Password" type="password" name="pwd">
+                </div>
+
+                <div class="col-5">
+                    <!--confirmação-->
+                    <input id="confirma" class="form-control" placeholder="Confirm your password" type="password" name="pwdConfir">
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+            
+            <div class='botoes-enviar'>
+              
+                    <!-- Botão enviar e limpar-->
+                    <button class="botao-cadastro btn-secondary" type="submit" name="enviar" value="foo">Send</button>
+              
+                    <button class="botao-cadastro btn-secondary" type="reset" name="limpar" value="foo">Reset</button>
+            </div>
+
+           
+          </div>
+        </form>
+    </div>
+
+ 
+    <footer>
+      <div class='container-footer'>
+        <div class='coluna-footer'>
+          <div class='logo-1'>
+            <a class="navbar-brand" href="index.html"><img width='150' height='auto' src='img/logo.svg' /></a>
+            <p>
+              StarFlix (ResiliaFLix) is a ficctional streaming project made by web development students with HTML, CSS,
+              JavaScript and JQuery. All the pictures and movies are from IMDB API and they aren't used for commercial
+              purposes.
+            </p>
+          </div>
+          <div class='coluna-menu'>
+          <div class="menu">
+            <h2>About</h2>
+            <ul class='menu-footer'>
+              <li><a href='/index.html'>Home</a></li>
+              <li><a href='/busca-filme.html'>Search</a></li>
+              <li><a href='/contatos.html'>Credits</a></li>
+              <li><a href='/login.html'>Sign In</a></li>
+              <li><a href='/cadastro.html'>Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="creditos">
+            <h2>Team</h2>
+            <ul class='menu-footer'>
+              <li><a href='https://github.com/eloisecoffe'>Eloise</a></li>
+              <li><a href='https://github.com/gabrielaalvescosta'>Gabriela</a></li>
+              <li><a href='https://github.com/jeanetchichury/'>Jean</a></li>
+              <li><a href='https://github.com/patandrade09'>Patrícia</a></li>
+              <li><a href='https://github.com/paulocarrilho'>Paulo</a></li>
+  
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class='copyright'>
+          Copyright 2021 - ResiliaFlix
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+</html>

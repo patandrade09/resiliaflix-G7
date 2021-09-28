@@ -96,6 +96,9 @@ input[type="checkbox"]:checked:after{
   max-width: 100%;
   height: 100vh;
   position: relative;
+  background: url(https://cdn.guidingtech.com/imager/assets/2019/07/230454/Best-Star-Wars-HD-and-4K-Wallpapers-for-Phone-and-PC-1_4d470f76dc99e18ad75087b1b8410ea9.jpg?1561981291) no-repeat;
+  object-fit: cover;
+  transition: opacity 800ms;
 }
 
 #slider img{
@@ -107,9 +110,7 @@ input[type="checkbox"]:checked:after{
   width: 100rem;
   height: 100vh;
 
-  object-fit: cover;
 
-  transition: opacity 800ms;
 }
 
 #slider img.selected { 

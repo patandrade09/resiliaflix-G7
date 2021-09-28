@@ -26,7 +26,7 @@
   <link rel="stylesheet" type="text/css"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./css/login.css">
-  <link rel="stylesheet" href="<link rel=" stylesheet"
+  <link rel="stylesheet" href="<link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,13 +36,13 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img width='150' height='auto' src='img/logo.svg' /></a>
+        <a class="navbar-brand" href="index.html"><img width='150' height='auto' src='img/logo.svg' /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <ul class="esconde navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -50,55 +50,22 @@
               <a class="nav-link" href="busca-filme.html">Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="creditos.html">Contact</a>
+              <a class="nav-link" href="contatos.html">Contact</a>
             </li>
           </ul>
           <!-- <audio autoplay>
                 <source src="img/yoda.mp3" type="audio/mpeg" />
               </audio> -->
 
-          <form class="d-flex">
-            <input id="busca-rapida" class="form-control me-2" type="search" placeholder="Quickly search here..."
-              aria-label="Search" required>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              type="submit" id="botao-busca-rapida">
-              <i class="fas fa-search"></i>
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 id='titulo'></h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div id='error-busca'>Filme não encontrado</div>
-                  <div class="modal-body" id='modal-filme'>
-                    <div id='elenco'></div>
-                    <div id='poster'></div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </form>
-          <button type="button" class="btn btn-primary"><a href='#'>Sign In</a></button>
-          <button type="button" class="btn btn-secondary"><a href='./indext.html'>Sign Up</a></button>
+          
+          
+          <button type="button" class="btn btn-secondary"><a href='cadastro.html'>Sign Up</a></button>
         </div>
 
       </div>
     </nav>
   </header>
   <div id="slider">
-    <img class="img"
-      src="https://cdn.guidingtech.com/imager/assets/2019/07/230454/Best-Star-Wars-HD-and-4K-Wallpapers-for-Phone-and-PC-1_4d470f76dc99e18ad75087b1b8410ea9.jpg?1561981291"
-      alt="">
     <div class="login-box">
       <h1>Login</h1>
       <div class="textbox">
@@ -114,12 +81,15 @@
         <input id="check" type="checkbox">
         <label class="label" for="check">Remember me</label>
       </div>
-      <input type="button" class="botao" value="Sign in">
-      <a href="./recuperar.html">Forgot your password?</a>
+      <button type="button" class="btn btn-secondary" style='width:100%'><a href='index.html'>Sign In</a></button>
+       
+      <a href="recuperar.html">Forgot your password?</a>
     </div>
 
 
     <script src="./js/login.js"></script>
+
+    
 </body>
 
 </html>
